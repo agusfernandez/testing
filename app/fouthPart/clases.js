@@ -38,12 +38,14 @@ const cantidadDeClases=(alumno)=>{
     for(info in informacion){
         if(informacion[info].includes(alumno)){
             cantidadTotal++;
-            clasesPresentes.push[info];
+            clasesPresentes.push(info);
         } 
     }
-    return cantidadTotal;
+    return `el alumno: ${alumno} esta en ${cantidadTotal} clases,  y esta cursando actualmente en ${clasesPresentes}`;
+
 }
 
 let mostrar1=mostrarInfo("fisica");
 
 console.log(cantidadDeClases("luciano"));
+console.log(cantidadDeClases("marina"));
