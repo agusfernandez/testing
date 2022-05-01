@@ -8,6 +8,7 @@ let materias={
 
 const inscripcion=(alumno, materia)=>{
     let personas=materias[materia];
+    //sacamos el primero para que nos devuelva solos los alumnos y no el profesor
     personas.shift();
     let alumnos = personas;
     if(alumno.length>=2){
