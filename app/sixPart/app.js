@@ -1,3 +1,5 @@
+console.log("holis");
+
 let alto=window.screen.availHeight;
 let ancho=window.screen.availWidth;
 
@@ -9,3 +11,18 @@ if (comprar){
 } else{
     alert ("compra rechazada");
 }
+
+// se debe crear un sistema que muestre todos los datos porque tiene toda la pantalla abierta
+
+let href= window.location.href;
+let pathname= window.location.pathname;
+let protocol= window.location.protocol;
+let hostname= window.location.hostname;
+
+let html= `Protocolo: <b>${protocol}</b></br>`;
+html +=  `Pathname: <b>${pathname}</b></br>`;
+html +=  `Hostname: <b>${hostname}</b></br>`;
+html +=  `Url completo: <b>${href}</b></br>`;
+
+document.write(html);
+
